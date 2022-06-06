@@ -1,5 +1,5 @@
 # openwrt-rtl8812au-rtl8821cu
-Out of tree rtl8812au and rtl8821cu driver integration for OpenWrt, tested on 19.07.8. Contains Makefiles that pull drivers from https://github.com/morrownr with patches to make them compile on OpenWrt, also includes a patch that fixes a bug in rtl8821cu where connecting to 5GHz network is giving out `config_phydm_switch_bandwidth_8821c fail` error. 
+Out of tree rtl8812au and rtl8821cu driver integration for OpenWrt, tested on 19.07.8. Contains Makefiles (based on ImmortalWrt) that pull drivers from https://github.com/morrownr with patches to make them compile on OpenWrt, also includes a patch that fixes a bug in rtl8821cu where connecting to 5GHz network is giving out `config_phydm_switch_bandwidth_8821c fail` error. 
 
 ## Steps
 

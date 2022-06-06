@@ -1,0 +1,13 @@
+diff --git a/hal/phydm/rtl8821c/phydm_hal_api8821c.c b/hal/phydm/rtl8821c/phydm_hal_api8821c.c
+index cff7988..9590849 100644
+--- a/hal/phydm/rtl8821c/phydm_hal_api8821c.c
++++ b/hal/phydm/rtl8821c/phydm_hal_api8821c.c
+@@ -986,7 +986,7 @@ config_phydm_switch_bandwidth_8821c(struct dm_struct *dm, u8 primary_ch_idx,
+ 	}
+ 
+ 	/* Error handling */
+-	if (bandwidth >= CHANNEL_WIDTH_MAX || (bandwidth == CHANNEL_WIDTH_40 && primary_ch_idx > 2) || (bandwidth == CHANNEL_WIDTH_80 && primary_ch_idx > 4)) {
++	if (bandwidth >= CHANNEL_WIDTH_MAX || (bandwidth == CHANNEL_WIDTH_40 && primary_ch_idx > 2) || (bandwidth == CHANNEL_WIDTH_80 && primary_ch_idx >10)) {
+ 		PHYDM_DBG(dm, ODM_PHY_CONFIG,
+ 			  "[%s]: Fail to switch bandwidth (bw: %d, primary ch: %d)\n",
+ 			  __func__, bandwidth, primary_ch_idx);
